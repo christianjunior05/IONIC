@@ -1,0 +1,7 @@
+{
+  "name": "moldu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
