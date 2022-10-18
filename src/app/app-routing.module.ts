@@ -11,6 +11,19 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'inscription',
+    loadChildren: () => import('./inscription/inscription.module').then( m => m.InscriptionPageModule)
+  },
+  {
+    path: 'connexion',
+    loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
+  },
+ 
+  {
+    path: 'recuperation',
+    loadChildren: () => import('./recuperation/recuperation.module').then( m => m.RecuperationPageModule)
+  },
 ];
 
 @NgModule({
