@@ -1,40 +1,28 @@
 <ion-content>
-  <!-- <ion-header>
-    <ion-item class="titre">
-      <ion-label >CONNEXION</ion-label>
-      
-    </ion-item>
-  </ion-header>
-  -->
-  
-  
-  <div class="padding">
-      <div class="logo">
-        <ion-icon color="light" name="person-circle-outline"></ion-icon>
-      </div>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button defaultHref slot="start"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="titre">CONNEXION</ion-title>
+  </ion-toolbar>
 
+<div class="centre">
+  <ion-item>
+    <ion-label color="light" placeholder="adresse mail " position="floating">Email</ion-label>
+    <ion-input color="light" type="email" placeholder="Entrez votre mail s'il vous plait"></ion-input>
+  </ion-item>
 
+  <ion-item>
+    <ion-label color="light" placeholder="adresse mail " position="floating">Mot de passe</ion-label>
+    <ion-input color="light" type="password" placeholder="Entrez votre mot de passe" ></ion-input>
+  </ion-item>
 
+  <ion-item lines="none">
+    <ion-button color="light" slot="end" fill="clear" routerLink="/recuperation">Mot de passe oublié ?</ion-button>
+  </ion-item>
+  <ion-button expand="block" shape="round" class="btn" routerLink="/home">SE CONNECTER</ion-button>
+  <br>
+  <ion-button color="light" expand="block" shape="round" fill="outline" routerLink="/inscription">S'INSCRIRE SUR MOLDU</ion-button>
+</div>
 
-
-    <ion-item>
-      <ion-label color="light" placeholder="adresse mail ">Email</ion-label>
-      <ion-input color="light" type="email" placeholder="Entrez votre mail svp"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label color="light" placeholder="adresse mail ">Mot de passe</ion-label>
-      <ion-input color="light" type="password" placeholder="Mot de passe" ></ion-input>
-    </ion-item>
-  
-    <ion-item lines="none">
-      <ion-button color="light" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
-    </ion-item>
-  
-    <ion-button color="light" expand="block" shape="round" fill="outline">S'INSCRIRE SUR MOLDU</ion-button>
-    <br>
-    <ion-button color="tertiary" expand="block" shape="round">SE CONNECTER</ion-button>
-  </div>
-    
-  </ion-content>
- 
+</ion-content>

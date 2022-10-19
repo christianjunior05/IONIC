@@ -1,5 +1,5 @@
 ion-content{
-	--ion-background-color: linear-gradient(#16222A,#3A6073);
+	--ion-background-color: #8e35bf;
 }
 
 ion-item{
@@ -9,8 +9,10 @@ ion-item{
     text-align: center;
     color: white;
 }
-
-.paddding{
-    padding: 5%;
-    margin-top: 70px;
+.centre{
+  margin-top: 120px;
+}
+.btn{
+  margin-top: 35px;
+  --background: #462871;
 }
