@@ -1,20 +1,145 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-item [routerLink]="['/profil']">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <ion-button fill="clear">
+          Profil
+        </ion-button>
+      </ion-item>
+      <ion-item [routerLink]="['/profil']">
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <ion-button fill="clear">
+         Ajouter un article
+        </ion-button>
+      </ion-item>
+      <ion-item [routerLink]="['/profil']">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-button fill="clear">
+         Message
+        </ion-button>
+      </ion-item>
+      <ion-item [routerLink]="['/profil']">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-button fill="clear">
+         Parametres
+        </ion-button>
+      </ion-item>
+      <ion-item [routerLink]="['/profil']">
+        <ion-icon name="power-outline"></ion-icon>
+        <ion-button fill="clear"  routerLink="/connexion">
+         Deconnexion
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Moldu</ion-title>
+    </ion-toolbar>
+    <ion-searchbar animated="true" placeholder="rechercher"></ion-searchbar>
+  </ion-header>
+  <ion-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+    <div>
+      <ion-card>
+        <ion-card>
+          <img src="/assets/basket2.jpg" />
+        </ion-card>
+        <div class="texte">
+          <p>21.5800</p>
+          <p> air nike jordan</p>
+          <p>pointure 45</p>
+        </div>
+      </ion-card>
+    </div>
+    <div>
+      <ion-card>
+        <ion-card>
+          <img src="/assets/quechua.jpg" />
+        </ion-card>
+        <div class="texte">
+          <p>11.000</p>
+          <p>sac à dos quechua</p>
+          <p>couleur bleu</p>
+        </div>
+      </ion-card>
+    </div>
+    <div >
+      <ion-card>
+        <ion-card>
+          <img src="/assets/basket6.jpg" />
+        </ion-card>
+        <div class="texte">
+          <p>13.500</p>
+          <p> air nike jordan</p>
+          <p>pointure 40</p>
+        </div>
+      </ion-card>
+    </div>
+    <div>
+      <ion-card>
+        <ion-card>
+          <img src="assets/air-nike.jpg" />
+        </ion-card>
+        <div class="texte">
+          <p>20.500</p>
+          <p> air nike jordan</p>
+          <p>pointure 45</p>
+        </div>
+      </ion-card>
+    </div>
+    <div>
+      <ion-card>
+        <ion-card>
+          <img src="/assets/ps4.jpg" />
+        </ion-card>
+        <div class="texte">
+          <p>150.000</p>
+          <p> Play station 4</p>
+          <p>une manette disponible</p>
+        </div>
+      </ion-card>
+    </div>
+    <div>
+      <ion-card>
+        <ion-card>
+          <img src="/assets/pull.jpg" />
+        </ion-card>
+        <div class="texte">
+          <p>18.000</p>
+          <p>nike jordan</p>
+          <p>pointure 45</p>
+        </div>
+      </ion-card>
+    </div>
+    <div>
+      <ion-card>
+        <ion-card>
+          <img src="/assets/sweat.jpg" />
+        </ion-card>
+        <div class="texte">
+          <p>8.000</p>
+          <p> sweat à capuche</p>
+          <p> couleur noire </p>
+        </div>
+      </ion-card>
+    </div>
+
+    <div >
+    </div>
+  </ion-content>
+
+</div>
+
+

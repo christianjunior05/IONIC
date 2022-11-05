@@ -1,0 +1,45 @@
+.container{
+
+  --ion-background-color: #8e35bf;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: 50%;
+  justify-content: center;
+}
+
+ion-card{
+  text-align: center;
+  background: transparent;
+  box-shadow: none;
+  margin-top: 120px;
+  .img{
+      height: 7rem;
+      width: 7.2rem;
+      justify-content: center;
+  }
+  ion-card-title{
+      font-size: 30px;
+      color: #8e35bf;
+      font-weight: bolder;
+  }
+  ion-card-content{
+      margin-top: 120px;
+      ion-button{
+          width: 180px;
+          height: 60px;
+          --border-radius: 40px;
+          --background:#8e35bf;
+          color: white;
+          font-weight: 400;
+          text-transform: none;
+          font-size: 20px;
+      }
+  }
+}
+.end{
+  font-family: Ubuntu;
+  font-size: 29px;
+  margin-top: 15px;
+}

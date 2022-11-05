@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'splash',
     pathMatch: 'full'
   },
   {
@@ -19,10 +19,30 @@ const routes: Routes = [
     path: 'connexion',
     loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
   },
- 
+
   {
     path: 'recuperation',
     loadChildren: () => import('./recuperation/recuperation.module').then( m => m.RecuperationPageModule)
+  },
+  {
+    path: 'nouveau-mot-de-passe',
+    loadChildren: () => import('./nouveau-mot-de-passe/nouveau-mot-de-passe.module').then( m => m.NouveauMotDePassePageModule)
+  },
+  {
+    path: 'message',
+    loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
+  },
+  {
+    path: 'discussion',
+    loadChildren: () => import('./discussion/discussion.module').then( m => m.DiscussionPageModule)
+  },
+  {
+    path: 'splash',
+    loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
+  },
+  {
+    path: 'bienvenue',
+    loadChildren: () => import('./bienvenue/bienvenue.module').then( m => m.BienvenuePageModule)
   },
 ];
 

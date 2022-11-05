@@ -2,30 +2,37 @@
 
 <ion-item>
   <ion-label class="titre">INSCRIPTION</ion-label>
-  
+
 </ion-item>
-
-<div class="padding">
-
-
-  <ion-item class="te">
-    Vends sans frais ce que tu n'utilise plus 
-  </ion-item>
-  
-</div>
+<div class="centre">
   <ion-item>
-    <ion-label color="light" placeholder="adresse mail ">Email</ion-label>
-    <ion-input color="light" type="email" placeholder="Entrez votre mail svp"></ion-input>
+    <ion-label color="light" placeholder="nom d'utilisateur : " position="floating">Nom d'utilisateur</ion-label>
+      <ion-input color="light" type="text" placeholder="nom d'utilisateur"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="light" placeholder="nom d'utilisateur :" position="floating">Numéro de telephone</ion-label>
+        <ion-input color="light" type="text" placeholder="numero de téléphone" position="floating"></ion-input>
+      </ion-item>
+<ion-item>
+  <ion-label color="light" placeholder="adresse mail " position="floating">Email</ion-label>
+    <ion-input color="light" type="email" placeholder="Adresse mail" position="floating"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label color="light" placeholder="adresse mail ">Mot de passe</ion-label>
+    <ion-label color="light" placeholder="adresse mail " position="floating">Mot de passe</ion-label>
     <ion-input color="light" type="password" placeholder="Mot de passe" ></ion-input>
   </ion-item>
-
-
-  <ion-button color="tertiary" expand="block" shape="round">Inscription</ion-button>
-  <ion-item lines="none">
-    <ion-button color="light" slot="end" fill="clear">Déja un compte ?connectez-vous</ion-button>
+  <ion-item>
+    <ion-label color="light" placeholder="adresse mail " position="floating">Confirmez mot de passe</ion-label>
+    <ion-input color="light" type="password" placeholder="confirmation du mot de passe" ></ion-input>
   </ion-item>
+
+
+  <ion-button  expand="block" shape="round" class="btn" routerLink="/connexion">INSCRIPTION</ion-button>
+  <ion-item lines="none">
+    <ion-button color="light" slot="end" fill="clear" routerLink="/connexion">Déja un compte ?connectez-vous</ion-button>
+  </ion-item>
+</div>
+
+
 </ion-content>
